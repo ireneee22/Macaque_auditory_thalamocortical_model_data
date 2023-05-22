@@ -120,7 +120,7 @@ cfg.scale = 1.0
 cfg.sizeY = 2000.0 
 cfg.sizeX = 200.0   
 cfg.sizeZ = 200.0
-cfg.scaleDensity = 0.05 # Should be 1.0 unless need lower cell density for test simulation or visualization
+cfg.scaleDensity = 0.20 # Should be 1.0 unless need lower cell density for test simulation or visualization
 
 
 #------------------------------------------------------------------------------
