@@ -14,9 +14,10 @@ MPI usage:
 
 Contributors: ericaygriffith@gmail.com, salvadordura@gmail.com
 """
-
-import matplotlib; matplotlib.use('Agg')  # to avoid graphics error in servers
-
+#in VSC, terminal -> cd to filepath
+#import matplotlib; matplotlib.use('Agg')  # to avoid graphics error in servers
+import matplotlib.pyplot as plt
+import matplotlib; matplotlib.use('Agg')
 from netpyne import sim
 
 cfg, netParams = sim.readCmdLineArgs(simConfigDefault='cfg_demo.py', netParamsDefault='netParams.py')
@@ -41,3 +42,4 @@ sim.gatherData()                  			# gather spiking data and cell info from ea
 sim.saveData()  
 
 sim.analysis.plotData()         			# plot spike raster etc
+plt.savefig('demo_raster_22.05.png')
