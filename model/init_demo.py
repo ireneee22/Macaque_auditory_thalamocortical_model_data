@@ -22,7 +22,7 @@ from netpyne import sim
 
 cfg, netParams = sim.readCmdLineArgs(simConfigDefault='cfg_demo.py', netParamsDefault='netParams.py')
 
-# sim.createSimulateAnalyze(netParams, cfg)
+sim.createSimulateAnalyze(netParams, cfg)
 
 sim.initialize(
     simConfig = cfg, 	
